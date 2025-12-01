@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Light mode variables */
+body {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --card-bg: #f7f7f7;
+  --border-color: #e5e5e5;
+  --primary: #2563eb;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark mode variables */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e5e5e5;
+  --card-bg: #1e1e1e;
+  --border-color: #333;
+  --primary: #4f9cff;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+* {
+  transition: background 0.25s ease, color 0.25s ease;
+}
